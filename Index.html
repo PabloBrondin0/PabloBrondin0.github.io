@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos casamos!</title>
+    
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <style>
+        body{
+            background-color: #fffdf8;
+        }
+        #Container{
+            text-align: center;
+        }
+       
+        #Pag2{
+           background-color: #fffdf8; 
+        }
+        #ImagenPrincipal{
+            
+            margin-top: 20%;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        #Contador{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        #Bajar{
+            margin-bottom: 30px !important;
+        }
+        .p{
+            margin-top: 5px;
+            color: #b18031;
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 0px;
+        }
+
+        .caja{
+            width: 80px;
+            height: 80px;
+            border: 1.5px solid #b18031;
+            display: inline-block;
+            border-radius: 20%;
+        }
+        .time{
+
+            color: #b18031;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 35px;
+        }
+       
+      
+    </style>
+    <div id="Container">
+        <div id="Pag1" class="vista">
+            <img id="ImagenPrincipal" src="./Invitación.gif" alt="">
+
+           
+            <div id="Contador">
+                <p class="p" style="margin-bottom: 10px; font-size: 20px;"> Faltan: </p>
+                <div>
+                    <div class="caja" id="DivDias">
+                        <p class="p">Días</p>
+                        <span class="time" id="days"></span>
+                    </div>
+                    <div class="caja" id="DivHoras">
+                        <p  class="p">Horas</p>
+                        <span class="time" id="hours"></span>
+                    </div>
+                    <div class="caja" id="DivMinutos">
+                        <p  class="p">Minutos</p>
+                        <span class="time" id="minutes"></span>
+                    </div>
+                    <div class="caja" id="DivSegundos">
+                        <p  class="p">Segundos</p>
+                        <span class="time" id="seconds"></span>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+            <a id="Bajar" href="#Pag2">
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Mas info! <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="Pag2" class="vista" style="padding-top: 15px;">
+            <div>
+                <p class="p" style="margin-bottom: 10px; font-size: 20px;"> Veni a celebrarlo con nosotros: </p>
+                
+                <div>
+                    <div id="Fecha" class="p" style="display: inline-block; border-right: 2px solid #b18031; padding-right: 10px; font-size: 30px;">
+                        <p style="margin: 0px !important">03/02/2024</p> 
+                        <p>19:00 hs</p>
+                    </div>
+                    <div id="Lugar" class="p" style="display: inline-block; padding-left: 10px;font-size: 30px;">
+                        <p style="position: relative;top: -20px;">Sc Eventos</p>
+                    </div>
+                </div>
+                
+            </div>
+            <br>
+            <div>
+                <p class="p" style="margin-bottom: 10px; font-size: 20px;"> Lugar: </p>
+                <span class="p">Sc Eventos Prez S/N, Villa Carlos Paz, Córdoba</span>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13623.858358145779!2d-64.4601496!3d-31.3875399!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d669e6a919063%3A0x59ac214ddf0de63e!2sSC%20Eventos!5e0!3m2!1ses-419!2sar!4v1687195570219!5m2!1ses-419!2sar" width="90%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <br>
+            <div class="row">
+                <p class="p" style="font-size: 20px;">Contactate con nosotros:</p>
+                <p class="p" style="font-size: 20px;">Paola <a class="padRight verde" href="https://api.whatsapp.com/send?phone=5493525454613"> <i class="fab fa-whatsapp"></i></a> <a href="tel:5493525454613"> <i class="fas fa-mobile-alt"></i></a>  </p>
+                <p class="p" style="font-size: 20px;">Rafael <a  class="padRight verde" href="https://api.whatsapp.com/send?phone=5493541624003"> <i class="fab fa-whatsapp"></i></a>  <a  href="tel:3541624003"> <i class="fas fa-mobile-alt"></i></a> </p>
+            </div>
+            <br>
+            <div class="row">
+                <p class="p">Valor de la Tarjeta: $XXXXX</p>
+                <p id="Alias" class="p">Alias: boda.paoyrafa </p>
+            </div>
+            <br>
+            <div class="row">
+                <p class="p">LOS ESPERAMOS!</p>
+              </div>
+        </div>
+    </div>
+
+    <script>
+
+    document.addEventListener('DOMContentLoaded', () => { 
+
+            //===
+            // VARIABLES
+            //===
+            const DATE_TARGET = new Date('02/03/2024 0:01 AM');
+            // DOM for render
+            const SPAN_DAYS = document.querySelector('span#days');
+            const SPAN_HOURS = document.querySelector('span#hours');
+            const SPAN_MINUTES = document.querySelector('span#minutes');
+            const SPAN_SECONDS = document.querySelector('span#seconds');
+            // Milliseconds for the calculations
+            const MILLISECONDS_OF_A_SECOND = 1000;
+            const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
+            const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
+            const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
+
+            //===
+            // FUNCTIONS
+            //===
+
+            /**
+            * Method that updates the countdown and the sample
+            */
+            function updateCountdown() {
+                // Calcs
+                const NOW = new Date()
+                const DURATION = DATE_TARGET - NOW;
+                const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
+                const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
+                const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
+                const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
+                // Thanks Pablo Monteserín (https://pablomonteserin.com/cuenta-regresiva/)
+
+                // Render
+                SPAN_DAYS.textContent = REMAINING_DAYS;
+                SPAN_HOURS.textContent = REMAINING_HOURS;
+                SPAN_MINUTES.textContent = REMAINING_MINUTES;
+                SPAN_SECONDS.textContent = REMAINING_SECONDS;
+            }
+
+            //===
+            // INIT
+            //===
+            updateCountdown();
+            // Refresh every second
+            setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
+        });
+
+
+        var alto = screen.height -15;
+        var ancho = screen.width -15;
+        $('.vista').css("width", '100%');
+        $('.vista').css("height", alto);
+
+        $('a[href^="#"]').click(function() {
+            var destino = $(this.hash);
+            if (destino.length == 0) {
+            destino = $('a[name="' + this.hash.substr(1) + '"]');
+            }
+            if (destino.length == 0) {
+            destino = $('html');
+            }
+            $('html, body').animate({ scrollTop: destino.offset().top }, 500);
+            return false;
+        });
+
+
+
+        
+
+    </script>
+</body>
+</html>
