@@ -7,15 +7,13 @@
     <title>Nos casamos!</title>
     
 
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,61 +25,86 @@
 </head>
 <body>
     <style>
+
         body{
             background-color: #fffdf8;
         }
+
         #Container{
             text-align: center;
         }
        
         #Pag2{
            background-color: #fffdf8; 
+           padding-top: 10%;
         }
+
         #ImagenPrincipal{
-            
-            margin-top: 20%;
             max-width: 100%;
             height: auto;
         }
         
         #Contador{
-            margin-top: 30px;
-            margin-bottom: 30px;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        #ContadorTitulo{
+            margin-bottom: 2%; 
+            font-size: 20px;
         }
 
         #Bajar{
-            margin-bottom: 30px !important;
+            margin-bottom: 20% !important;
         }
+
         .p{
-            margin-top: 5px;
+            margin-top: 1%;
             color: #b18031;
             font-family: 'Montserrat', sans-serif;
             margin-bottom: 0px;
         }
 
         .caja{
-            width: 80px;
-            height: 80px;
+            width: 21%;
+            height: 21%;
             border: 1.5px solid #b18031;
             display: inline-block;
             border-radius: 20%;
         }
-        .time{
 
+        .time{
             color: #b18031;
             font-family: 'Montserrat', sans-serif;
             font-size: 35px;
         }
-       
+        #Veni{
+            margin-bottom: 5%; 
+            font-size: 20px;
+        }
+       #Fecha{
+            display: inline-block;
+            border-right: 2px solid #b18031;
+            padding-right: 5%; 
+            font-size: 25px;
+       }
+       #Lugar{
+            display: inline-block; 
+            padding-left: 5%;
+            font-size: 25px;
+       }
+       #TituloMapa{
+            margin-bottom: 5%; 
+            font-size: 20px;
+       }
       
     </style>
     <div id="Container">
         <div id="Pag1" class="vista">
-            <img id="ImagenPrincipal" src="./Invitación.gif" alt="">
 
-           
+            <img id="ImagenPrincipal" src="./Invitación.gif" alt="">
+ 
             <div id="Contador">
-                <p class="p" style="margin-bottom: 10px; font-size: 20px;"> Faltan: </p>
+                <p class="p" id="ContadorTitulo" > Faltan: </p>
                 <div>
                     <div class="caja" id="DivDias">
                         <p class="p">Días</p>
@@ -105,27 +128,29 @@
 
             
             <a id="Bajar" href="#Pag2">
-                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> Mas info! <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> 
+                    Mas info! 
+                <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
             </a>
         </div>
-        <div id="Pag2" class="vista" style="padding-top: 15px;">
+        <div id="Pag2" class="vista">
             <div>
-                <p class="p" style="margin-bottom: 10px; font-size: 20px;"> Veni a celebrarlo con nosotros: </p>
+                <p class="p" id="Veni" > Veni a celebrarlo con nosotros: </p>
                 
                 <div>
-                    <div id="Fecha" class="p" style="display: inline-block; border-right: 2px solid #b18031; padding-right: 10px; font-size: 30px;">
+                    <div id="Fecha" class="p">
                         <p style="margin: 0px !important">03/02/2024</p> 
-                        <p>19:00 hs</p>
+                        <p>20:30 hs</p>
                     </div>
-                    <div id="Lugar" class="p" style="display: inline-block; padding-left: 10px;font-size: 30px;">
-                        <p style="position: relative;top: -20px;">Sc Eventos</p>
+                    <div id="Lugar" class="p" >
+                        <p >Sc Eventos</p>
                     </div>
                 </div>
                 
             </div>
             <br>
             <div>
-                <p class="p" style="margin-bottom: 10px; font-size: 20px;"> Lugar: </p>
+                <p class="p" id="TituloMapa"> Lugar: </p>
                 <span class="p">Sc Eventos Prez S/N, Villa Carlos Paz, Córdoba</span>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13623.858358145779!2d-64.4601496!3d-31.3875399!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942d669e6a919063%3A0x59ac214ddf0de63e!2sSC%20Eventos!5e0!3m2!1ses-419!2sar!4v1687195570219!5m2!1ses-419!2sar" width="90%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -137,8 +162,9 @@
             </div>
             <br>
             <div class="row">
-                <p class="p">Valor de la Tarjeta: $XXXXX</p>
+                <p class="p">Valor de la Tarjeta: $12.500</p>
                 <p id="Alias" class="p">Alias: boda.paoyrafa </p>
+                <p id="Alias" class="p">Confirmar presencia antes de 29/12 </p>
             </div>
             <br>
             <div class="row">
@@ -149,61 +175,69 @@
 
     <script>
 
-    document.addEventListener('DOMContentLoaded', () => { 
+        //CUENTA ATRAS
+        document.addEventListener('DOMContentLoaded', () => { 
 
-            //===
-            // VARIABLES
-            //===
-            const DATE_TARGET = new Date('02/03/2024 0:01 AM');
-            // DOM for render
-            const SPAN_DAYS = document.querySelector('span#days');
-            const SPAN_HOURS = document.querySelector('span#hours');
-            const SPAN_MINUTES = document.querySelector('span#minutes');
-            const SPAN_SECONDS = document.querySelector('span#seconds');
-            // Milliseconds for the calculations
-            const MILLISECONDS_OF_A_SECOND = 1000;
-            const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
-            const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
-            const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
+                //===
+                // VARIABLES
+                //===
+                //const DATE_TARGET = new Date('19/06/2023 8:30 PM');
 
-            //===
-            // FUNCTIONS
-            //===
+                const DATE_TARGET = new Date(2024,1,3); //FECHA BODA              
+                DATE_TARGET.setHours(20, 30, 0);
 
-            /**
-            * Method that updates the countdown and the sample
-            */
-            function updateCountdown() {
-                // Calcs
-                const NOW = new Date()
-                const DURATION = DATE_TARGET - NOW;
-                const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
-                const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
-                const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
-                const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
-                // Thanks Pablo Monteserín (https://pablomonteserin.com/cuenta-regresiva/)
+                // DOM for render
+                const SPAN_DAYS = document.querySelector('span#days');
+                const SPAN_HOURS = document.querySelector('span#hours');
+                const SPAN_MINUTES = document.querySelector('span#minutes');
+                const SPAN_SECONDS = document.querySelector('span#seconds');
+                // Milliseconds for the calculations
+                const MILLISECONDS_OF_A_SECOND = 1000;
+                const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
+                const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
+                const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
 
-                // Render
-                SPAN_DAYS.textContent = REMAINING_DAYS;
-                SPAN_HOURS.textContent = REMAINING_HOURS;
-                SPAN_MINUTES.textContent = REMAINING_MINUTES;
-                SPAN_SECONDS.textContent = REMAINING_SECONDS;
-            }
+                //===
+                // FUNCTIONS
+                //===
 
-            //===
-            // INIT
-            //===
-            updateCountdown();
-            // Refresh every second
-            setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
+                /**
+                * Method that updates the countdown and the sample
+                */
+                function updateCountdown() {
+                    // Calcs
+                    const NOW = new Date()
+                    const DURATION = DATE_TARGET - NOW;
+                    const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
+                    const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
+                    const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
+                    const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
+                    // Thanks Pablo Monteserín (https://pablomonteserin.com/cuenta-regresiva/)
+
+                    // Render
+                   
+                    if(REMAINING_DAYS >= 0){ SPAN_DAYS.textContent = REMAINING_DAYS;} else {SPAN_DAYS.textContent = 0}
+                    if(REMAINING_HOURS >= 0){ SPAN_HOURS.textContent = REMAINING_HOURS;} else {SPAN_HOURS.textContent = 0}
+                    if(REMAINING_MINUTES >= 0){ SPAN_MINUTES.textContent = REMAINING_MINUTES;} else {SPAN_MINUTES.textContent = 0}
+                    if(REMAINING_SECONDS >= 0){ SPAN_SECONDS.textContent = REMAINING_SECONDS;} else {SPAN_SECONDS.textContent = 0}
+
+                }
+
+                //===
+                // INIT
+                //===
+                updateCountdown();
+                // Refresh every second
+                setInterval(updateCountdown, MILLISECONDS_OF_A_SECOND);
         });
 
-
+        //SET TAMAÑO IMAGEN
         var alto = screen.height -15;
         var ancho = screen.width -15;
-        $('.vista').css("width", '100%');
+        $('.vista').css("width", ancho);
         $('.vista').css("height", alto);
 
+        //TRANSICION VER MAS INFO
         $('a[href^="#"]').click(function() {
             var destino = $(this.hash);
             if (destino.length == 0) {
@@ -215,10 +249,6 @@
             $('html, body').animate({ scrollTop: destino.offset().top }, 500);
             return false;
         });
-
-
-
-        
 
     </script>
 </body>
